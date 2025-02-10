@@ -110,4 +110,4 @@ This project is licensed under the **MIT License**.
 ## Acknowledgments
 - **Ultralytics** for the YOLOv8 framework.
 - **OpenCV** for video processing support.
-- **Pillow & Tkinter** for GUI development.
+- **Pillow & Tkinter** for GUI development."# All-in-One-Label" 
