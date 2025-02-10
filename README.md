@@ -1,0 +1,113 @@
+# YOLO / Mask R-CNN Annotator
+
+## Overview
+The **YOLO / Mask R-CNN Annotator** is a powerful tool designed for annotating images and videos with bounding boxes and polygons, making it suitable for deep learning tasks such as object detection and instance segmentation. The tool allows you to create, edit, and export annotations in formats compatible with YOLO, Pascal VOC, and COCO JSON. It also supports AI-assisted pre-labeling using YOLOv8 and provides functionalities to train custom models.
+
+> **Note:** Some features are still under development and may not be fully integrated.
+
+---
+
+## Features
+- **Image Annotation**
+  - Draw bounding boxes (BBox) and polygons for object segmentation.
+  - Save and load annotations in multiple formats.
+  - Undo/redo and edit annotations.
+- **Video Annotation** *(Requires OpenCV)*
+  - Extract frames from videos for annotation.
+- **Class Management**
+  - Add, remove, and manage object classes.
+  - Select object classes via the sidebar.
+- **Navigation & Viewing**
+  - Zoom and pan within images.
+  - Navigate through images using a file tree.
+- **Annotation Export**
+  - YOLO format.
+  - Mask R-CNN
+- **AI-Assisted Pre-Annotation** *(YOLOv11-based, Requires Ultralytics)*
+  - Use a pre-trained YOLOv8 model to auto-detect objects and generate annotations.
+- **Custom Model Training** *(Requires Ultralytics)*
+  - Train a custom YOLO model with your dataset.
+- **Quality Control Tools**
+  - Detect overlapping bounding boxes.
+- **Project Management**
+  - Save and load annotation projects.
+  - Auto-save functionality.
+
+---
+
+## Installation
+
+### Prerequisites
+Ensure you have **Python 3.7+** installed on your system.
+
+### Install Dependencies
+```bash
+pip install -r requirements.txt
+```
+
+> **Note:** If you plan to use AI-assisted annotation or train a custom model, you need to install **Ultralytics**.
+```bash
+pip install ultralytics
+```
+
+For video annotation support, install OpenCV:
+```bash
+pip install opencv-python
+```
+
+---
+
+## Usage
+
+### Running the Application
+Run the main script to start the annotator:
+```bash
+python main.py
+```
+
+### Loading Images or Videos
+- Click **File → Load Image Folder** to select a folder containing images.
+- If OpenCV is installed, click **File → Load Video** to extract frames from a video.
+
+### Annotating Objects
+- **Bounding Box Mode:** Click and drag to create a rectangular annotation.
+- **Polygon Mode:** Click to create polygon points, then double-click to close the shape.
+- Use the **Edit Mode** to modify existing annotations.
+
+### Exporting Annotations
+Go to **Export** in the menu to save annotations in:
+- YOLO format (fully implemented).
+- Mask R-CNN
+
+### AI-Assisted Pre-Annotation
+To use YOLOv8 for automatic annotation:
+1. Install **Ultralytics** (`pip install ultralytics`).
+2. Click **Tools → AI Pre-label (YOLOv8)**.
+3. The pre-trained YOLOv8 model will detect objects and generate annotations automatically.
+
+### Training a Custom Model
+1. Install **Ultralytics** (`pip install ultralytics`).
+2. Prepare a dataset in YOLO format and a `dataset.yaml` file.
+3. Click **Tools → Train Custom Model** and select your dataset.
+4. Choose the number of epochs and start training.
+
+> **Note:** Training is done using the default YOLOv8 model configuration.
+
+---
+
+## Known Issues & Future Improvements
+- **Pascal VOC and COCO export formats are not fully implemented.**
+- **Dataset splitting functionality is not yet available.**
+- **Polygon editing needs improvements.**
+
+---
+
+## License
+This project is licensed under the **MIT License**.
+
+---
+
+## Acknowledgments
+- **Ultralytics** for the YOLOv8 framework.
+- **OpenCV** for video processing support.
+- **Pillow & Tkinter** for GUI development.
