@@ -132,7 +132,7 @@ class ImageVideoAnnotator(tk.Tk):
         self.menu_bar.add_cascade(label="Export", menu=export_menu)
         # Tools Menu
         tools_menu = tk.Menu(self.menu_bar, tearoff=0)
-        tools_menu.add_command(label="AI Pre-label (YOLOv8)", command=self.ai_prelabel)
+        tools_menu.add_command(label="AI Pre-label (YOLOv11)", command=self.ai_prelabel)
         tools_menu.add_command(label="Train Custom Model", command=self.train_custom_model)
         tools_menu.add_command(label="Test Model", command=self.test_model)  # New test model option
         tools_menu.add_command(label="Quality Check", command=self.quality_check)

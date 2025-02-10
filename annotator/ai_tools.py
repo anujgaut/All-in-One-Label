@@ -2,7 +2,7 @@
 import os
 import glob
 import cv2
-from tkinter import messagebox, filedialog
+from tkinter import Canvas, messagebox, filedialog
 from PIL import Image, ImageDraw, ImageFont
 import os
 import glob
@@ -134,7 +134,7 @@ def train_custom_model(app):
         sys.stdout = QueueStream(log_queue)
         sys.stderr = QueueStream(log_queue)
         try:
-            model = YOLO("yolov8s.yaml")
+            model = YOLO("yolo11s.yaml")
             model.train(
                 data=dataset_file,
                 epochs=epochs,

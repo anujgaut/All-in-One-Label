@@ -89,9 +89,29 @@ To use YOLOv8 for automatic annotation:
 1. Install **Ultralytics** (`pip install ultralytics`).
 2. Prepare a dataset in YOLO format and a `dataset.yaml` file.
 3. Click **Tools → Train Custom Model** and select your dataset.
-4. Choose the number of epochs and start training.
+4. Choose the number of epochs and start training and add others parameters.
 
-> **Note:** Training is done using the default YOLOv8 model configuration.
+> **Note:** Training is done using the default YOLOv11 model.
+
+---
+
+## Keyboard Shortcuts
+
+The following key bindings are available in the Advanced YOLO / Mask R-CNN Annotator:
+
+| **Shortcut**           | **Function**                                   |
+|------------------------|------------------------------------------------|
+| **N** or **n**         | Load the next image                            |
+| **P** or **p**         | Load the previous image                        |
+| **D** or **d**         | Delete the selected annotation                 |
+| **Z** or **z**         | Undo the last action                           |
+| **Y** or **y**         | Redo the last undone action                    |
+| **Ctrl + S**           | Save the current project                       |
+| **Ctrl + Z**           | Undo (alternative shortcut)                    |
+| **Ctrl + Y**           | Redo (alternative shortcut)                    |
+| **Double-click**       | (In polygon mode) Finish drawing polygon       |
+| **Right-click & drag** | Pan the image                                  |
+| **Mouse wheel**        | Zoom in/out the image                          |
 
 ---
 
