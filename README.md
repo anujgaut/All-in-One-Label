@@ -1,7 +1,7 @@
 # YOLO / Mask R-CNN Annotator
 
 ## Overview
-The **YOLO / Mask R-CNN Annotator** is a powerful tool designed for annotating images and videos with bounding boxes and polygons, making it suitable for deep learning tasks such as object detection and instance segmentation. The tool allows you to create, edit, and export annotations in formats compatible with YOLO, Pascal VOC, and COCO JSON. It also supports AI-assisted pre-labeling using YOLOv8 and provides functionalities to train custom models.
+The **YOLO / Mask R-CNN Annotator** is a powerful tool designed for annotating images and videos with bounding boxes and polygons, making it suitable for deep learning tasks such as object detection and instance segmentation. The tool allows you to create, edit, and export annotations in formats compatible with YOLO,and Mask RCNN JSON. It also supports AI-assisted pre-labeling using pretrained YOLOv11 and provides functionalities to train custom models.
 
 > **Note:** Some features are still under development and may not be fully integrated.
 
