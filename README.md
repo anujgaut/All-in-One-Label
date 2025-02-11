@@ -123,8 +123,16 @@ The following key bindings are available in the Advanced YOLO / Mask R-CNN Annot
 ---
 
 ## License
-This project is licensed under the **MIT License**.
+### Public Use License (Attribution Required)  
 
+This project is made available to the public for use, modification, and distribution under the following conditions:  
+
+- **Attribution** - Any use, modification, or distribution of this project must include appropriate credit to the original author. This includes a clear reference to the original source in any derivative works or public distributions.  
+- **Modification and Redistribution** - Users are permitted to modify and redistribute the project, provided that attribution is maintained and any significant changes are noted.  
+- **No Warranty or Liability** - This project is provided "as-is" without any warranties, expressed or implied. The author assumes no responsibility for any issues arising from its use.  
+- **Fair Use and Ethical Application** - This project must not be used for unlawful, unethical, or harmful purposes.  
+
+By using this project, you agree to adhere to these terms. 
 ---
 
 ## Acknowledgments
