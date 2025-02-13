@@ -136,6 +136,6 @@ By using this project, you agree to adhere to these terms.
 ---
 
 ## Acknowledgments
-- **Ultralytics** for the YOLOv8 framework.
+- **Ultralytics** for the YOLOv11 framework.
 - **OpenCV** for video processing support.
 - **Pillow & Tkinter** for GUI development."# All-in-One-Label" 
